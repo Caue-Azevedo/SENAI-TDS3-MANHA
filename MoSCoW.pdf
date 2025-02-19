@@ -1,0 +1,19 @@
+ALUNO: CAUÊ CARLOS DE AZEVEDO GUEDES, TDS3 – MANHÃ
+Levantamento de requisitos usando o Método MoSCoW
+
+Must have (Obrigatório) (Mo):
+•	Consulta de todas as linhas de ônibus de Curitiba: Exibição completa de todas as linhas ativas, incluindo horários, rotas e pontos de parada.
+•	Rastreamento em tempo real dos veículos: Localização dos ônibus e previsão de chegada.
+•	Cadastro de usuários: Login e gerenciamento de contas para os usuários.
+
+Should have (Importante, mas não essencial) (S):
+•	Planejamento de viagens: Permitir que o usuário insira origem e destino para sugerir a melhor rota.
+•	Notificações em tempo real: Alertar sobre alterações no serviço, como atrasos e mudanças de rota.
+
+Could have (Desejável) (Co):
+•	Pagamento integrado e recarga de bilhetes: Funcionalidade para compra de passes ou recarga de cartões diretamente no app.
+•	Avaliações de usuários: Permitir que passageiros classifiquem os serviços (horários, limpeza, etc.).
+
+Won't have (Não necessário agora) (W):
+•	Outros tipos de transporte ou cidades: Funcionalidades para outros transportes (metrô, trem) ou para cidades fora de Curitiba.
+
