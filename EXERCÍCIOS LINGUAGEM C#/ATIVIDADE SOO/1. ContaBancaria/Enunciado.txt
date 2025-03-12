@@ -1,0 +1,9 @@
+Crie uma classe ContaBancaria com os seguintes atributos:
+  1. saldo (decimal, privado).
+  2. numeroConta (string, público).
+
+
+Implemente métodos para:  
+  1. Depositar dinheiro (validar se o valor é positivo).
+  2. Sacar dinheiro (validar se há saldo suficiente).
+  3. Verificar saldo (apenas leitura).
