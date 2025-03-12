@@ -1,0 +1,9 @@
+Crie uma classe Carro com os seguintes atributos:
+  1. velocidadeAtual (int, privado).
+  2. marchaAtual (int, privado).
+
+Implemente métodos para:
+  1. Acelerar (aumentar a velocidade).
+  2. Frear (diminuir a velocidade).
+  3. Trocar marcha.
+  4. Verificar velocidade atual (apenas leitura).
