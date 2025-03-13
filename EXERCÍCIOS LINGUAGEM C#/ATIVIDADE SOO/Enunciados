@@ -1,0 +1,22 @@
+EXERCÍCIO 1. CONTA BANCÁRIA -
+Crie uma classe ContaBancaria com os seguintes atributos:
+  1. saldo (decimal, privado).
+  2. numeroConta (string, público).
+
+Implemente métodos para:  
+  1. Depositar dinheiro (validar se o valor é positivo).
+  2. Sacar dinheiro (validar se há saldo suficiente).
+  3. Verificar saldo (apenas leitura).
+
+============================================================
+
+EXERCÍCIO 2. CARRO -
+Crie uma classe Carro com os seguintes atributos:
+  1. velocidadeAtual (int, privado).
+  2. marchaAtual (int, privado).
+
+Implemente métodos para:
+  1. Acelerar (aumentar a velocidade).
+  2. Frear (diminuir a velocidade).
+  3. Trocar marcha.
+  4. Verificar velocidade atual (apenas leitura).
