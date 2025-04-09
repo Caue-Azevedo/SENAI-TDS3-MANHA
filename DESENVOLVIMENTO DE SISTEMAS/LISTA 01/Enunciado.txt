@@ -1,4 +1,4 @@
-LISTA 01
+LISTA 01.
 
 1. Variáveis e Tipos de Dados
   - Crie um programa que:
