@@ -1,0 +1,31 @@
+LISTA 02.
+
+4. Arrays e Listas
+  - Desenvolva um programa que:
+	Permita ao usuário cadastrar 5 produtos com preços
+	Calcule e mostre:
+		O produto mais caro
+		A média de preços
+		Todos os produtos com preço acima da média
+
+5. Métodos e Funções
+  - Crie uma classe CalculadoraCientifica com métodos estáticos para:
+	Calcular potência (base, expoente)
+	Calcular raiz quadrada
+	Calcular fatorial
+	Teste cada método no programa principal
+
+6. Classes e Objetos
+  - implemente uma classe ContaBancaria com:
+	Número da conta
+	Nome do titular
+	Saldo
+	Métodos:
+		Depositar
+		Sacar	
+		ExibirSaldo
+	Crie um menu interativo para testar a classe
+
+
+
+Sempre utilizando as melhores práticas de segurança e Entrada de Dados.
