@@ -1,0 +1,22 @@
+1. Variáveis e Tipos de Dados
+  - Crie um programa que:
+	Peça ao usuário para informar nome, idade e altura
+	Armazene esses valores em variáveis apropriadas
+	Exiba os dados no formato: "Olá [nome], você tem [idade] anos e mede [altura]m."
+
+2. Operadores e Expressões
+  - Faça uma calculadora simples que:
+	Peça dois números ao usuário
+	Realize as 4 operações básicas (+, -, *, /)
+	Exiba os resultados formatados
+
+3. Estruturas de Controle
+  - Crie um programa que:
+	Peça uma nota entre 0 e 10
+	Classifique conforme:
+		9-10: Excelente
+		7-8: Bom
+		5-6: Regular
+		0-4: Insuficiente
+
+** Sempre usando as melhores práticas de segurança e Entrada de Dados **
