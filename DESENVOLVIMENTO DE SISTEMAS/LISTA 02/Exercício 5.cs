@@ -57,16 +57,18 @@ class CalculadoraCientifica
     public double RaizQuadrada()
     {
         if (numero < 0)
+        {
             throw new ArgumentException("Não é possível calcular a raiz quadrada de número negativo.");
-
+        }
         return Math.Sqrt(numero);
     }
 
     public BigInteger Fatorial()
     {
         if (numeroInteiro < 0)
+        {
             throw new ArgumentException("Não é possível calcular o fatorial de número negativo.");
-
+        }
         BigInteger resultado = 1;
         for (int n = 1; n <= numeroInteiro; n++)
         {
