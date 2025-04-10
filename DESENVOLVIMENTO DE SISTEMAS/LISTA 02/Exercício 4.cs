@@ -1,15 +1,36 @@
 using System;
 using System.Threading;
+using System.Text;
 
 class Produto
 {
-    public string Nome { get; set; }
-    public double Preco { get; set; }
+    private string nome;
+    private double preco;
 
     public Produto(string nome, double preco)
     {
-        Nome = nome;
-        Preco = preco;
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public string GetNome()
+    {
+        return nome;
+    }
+
+    public void SetNome(string valor)
+    {
+        nome = valor;
+    }
+
+    public double GetPreco()
+    {
+        return preco;
+    }
+
+    public void SetPreco(double valor)
+    {
+        preco = valor;
     }
 }
 
@@ -17,6 +38,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.OutputEncoding = Encoding.UTF8;
+
         try
         {
             Produto[] produtos = new Produto[5];
@@ -46,20 +69,20 @@ class Program
             Console.WriteLine("+------------------------------------------------+");
             Console.WriteLine("|                  Resumo dos Produtos           |");
             Console.WriteLine("+------------------------------------------------+");
-            Console.WriteLine("|\n|        Produto mais caro: " + maisCaro.Nome + " - R$" + maisCaro.Preco.ToString("F2"));
+            Console.WriteLine("|\n|        Produto mais caro: " + maisCaro.GetNome() + " - R$" + maisCaro.GetPreco().ToString("F2"));
             Console.WriteLine("|        Média de preços: R$" + media.ToString("F2"));
             Console.WriteLine("|\n|        Produtos acima da média de preço:");
-            
-        foreach (var produto in produtos)
+
+            foreach (var produto in produtos)
             {
-                if (produto.Preco > media)
+                if (produto.GetPreco() > media)
                 {
-                    Console.WriteLine("|         " + produto.Nome + " - R$" + produto.Preco.ToString("F2"));
+                    Console.WriteLine("|         " + produto.GetNome() + " - R$" + produto.GetPreco().ToString("F2"));
                     Thread.Sleep(1000);
                 }
             }
-            Console.WriteLine("+------------------------------------------------+");
 
+            Console.WriteLine("+------------------------------------------------+");
         }
         catch (Exception ex)
         {
@@ -99,7 +122,7 @@ class Program
         double soma = 0;
         foreach (var produto in produtos)
         {
-            soma += produto.Preco;
+            soma += produto.GetPreco();
         }
         return soma / produtos.Length;
     }
@@ -109,7 +132,7 @@ class Program
         Produto maisCaro = produtos[0];
         foreach (var produto in produtos)
         {
-            if (produto.Preco > maisCaro.Preco)
+            if (produto.GetPreco() > maisCaro.GetPreco())
             {
                 maisCaro = produto;
             }
