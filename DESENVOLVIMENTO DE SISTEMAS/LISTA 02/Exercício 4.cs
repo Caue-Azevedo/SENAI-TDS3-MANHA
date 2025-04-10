@@ -78,7 +78,7 @@ class Program
                 if (produto.GetPreco() > media)
                 {
                     Console.WriteLine("|         " + produto.GetNome() + " - R$" + produto.GetPreco().ToString("F2"));
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100);
                 }
             }
 
