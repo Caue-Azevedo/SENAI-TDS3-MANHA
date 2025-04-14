@@ -1,0 +1,13 @@
+CÓDIGO 01 - 
+  O código "01.e" tenta calcular a média de três números fornecidos pelo usuário, mas contém erros de lógica.
+  Corrija o código para que funcione corretamente.
+
+
+CÓDIGO 02 - 
+   O código "02.e" verifica se um número é par ou ímpar, mas contém redundância. 
+   Simplifique e otimize o código para torná-lo mais eficiente.
+
+
+CÓDIGO 01 - 
+  3. O código "03.e" tenta converter uma entrada do usuário em um número inteiro, mas não trata exceções. 
+  Adicione um mecanismo para lidar com entradas inválidas.
