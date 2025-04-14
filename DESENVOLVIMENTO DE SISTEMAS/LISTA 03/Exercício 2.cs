@@ -3,16 +3,22 @@ using System.Threading;
 
 class Numero
 {
-    public int Valor { get; set; }
+    private int valor;
 
     public Numero() { }
 
     public Numero(int valor)
     {
-        Valor = valor;
+        this.valor = valor;
     }
 
-    public string Paridade() => Valor % 2 == 0 ? "par  " : "ímpar";
+    public int Valor
+    {
+        get { return valor; }
+        set { valor = value; }
+    }
+
+    public string Paridade() => valor % 2 == 0 ? "par  " : "ímpar";
 }
 
 class Program
@@ -24,7 +30,7 @@ class Program
         while (true)
         {
             Console.Clear();
-            Console.WriteLine("\n\n+----------------------------+");
+            Console.WriteLine("\n+----------------------------+");
             Console.Write("| Digite um número: ");
             string entrada = Console.ReadLine();
 
@@ -34,7 +40,7 @@ class Program
                 string resultado = numero.Paridade();
 
                 Console.Clear();
-                Console.WriteLine("\n\n+---------------------------+");
+                Console.WriteLine("\n+---------------------------+");
                 Console.WriteLine($"|     Seu número é: {resultado}   |");
                 Console.WriteLine("+---------------------------+");
 
