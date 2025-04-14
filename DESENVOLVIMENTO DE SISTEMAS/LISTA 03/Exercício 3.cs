@@ -23,12 +23,15 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("+----------------------------+");
-                Console.WriteLine("|      Entrada inválida      |");
-                Console.WriteLine("+----------------------------+");
+                Console.WriteLine("+--------------------------------+");
+                Console.WriteLine("|        Entrada inválida        |");
+                Console.WriteLine("+--------------------------------+");
                 Thread.Sleep(900);
                 Console.Clear();
             }
-        }
+         }
+            Console.WriteLine("\n\n+---------------------------------------+");
+            Console.WriteLine("|               Saindo...               |");
+            Console.WriteLine("+---------------------------------------+");
     }
 }   
