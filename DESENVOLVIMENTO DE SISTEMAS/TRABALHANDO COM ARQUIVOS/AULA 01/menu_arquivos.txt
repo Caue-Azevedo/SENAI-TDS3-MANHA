@@ -1,0 +1,114 @@
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string caminhoArquivo = "exemplo.txt";
+        
+        while (true)
+        {
+            Console.WriteLine("\nMENU DE OPÇÕES:");
+            Console.WriteLine("1 - Escrever no arquivo");
+            Console.WriteLine("2 - Ler arquivo");
+            Console.WriteLine("3 - Adicionar texto ao arquivo");
+            Console.WriteLine("4 - Ver informações do arquivo");
+            Console.WriteLine("5 - Sair");
+            Console.Write("Escolha uma opção: ");
+            
+            string opcao = Console.ReadLine();
+            
+            switch (opcao)
+            {
+                case "1":
+                    EscreverArquivo(caminhoArquivo);
+                    break;
+                case "2":
+                    LerArquivo(caminhoArquivo);
+                    break;
+                case "3":
+                    AdicionarAoArquivo(caminhoArquivo);
+                    break;
+                case "4":
+                    InformacoesArquivo(caminhoArquivo);
+                    break;
+                case "5":
+                    return;
+                default:
+                    Console.WriteLine("Opção inválida!");
+                    break;
+            }
+        }
+    }
+    
+    static void EscreverArquivo(string caminho)
+    {
+        Console.WriteLine("\nDigite o texto (digite 'fim' em uma linha separada para terminar):");
+        
+        using (StreamWriter writer = new StreamWriter(caminho))
+        {
+            string linha;
+            while ((linha = Console.ReadLine()) != "fim")
+            {
+                writer.WriteLine(linha);
+            }
+        }
+        
+        Console.WriteLine("Texto gravado com sucesso!");
+    }
+    
+    static void LerArquivo(string caminho)
+    {
+        if (!File.Exists(caminho))
+        {
+            Console.WriteLine("Arquivo não encontrado!");
+            return;
+        }
+        
+        Console.WriteLine("\nConteúdo do arquivo:");
+        using (StreamReader reader = new StreamReader(caminho))
+        {
+            string linha;
+            while ((linha = reader.ReadLine()) != null)
+            {
+                Console.WriteLine(linha);
+            }
+        }
+    }
+    
+    static void AdicionarAoArquivo(string caminho)
+    {
+        Console.WriteLine("\nDigite o texto a ser adicionado (digite 'fim' em uma linha separada para terminar):");
+        
+        using (StreamWriter writer = new StreamWriter(caminho, append: true))
+        {
+            string linha;
+            while ((linha = Console.ReadLine()) != "fim")
+            {
+                writer.WriteLine(linha);
+            }
+        }
+        
+        Console.WriteLine("Texto adicionado com sucesso!");
+    }
+    
+    static void InformacoesArquivo(string caminho)
+    {
+        if (!File.Exists(caminho))
+        {
+            Console.WriteLine("Arquivo não encontrado!");
+            return;
+        }
+        
+        FileInfo info = new FileInfo(caminho);
+        
+        Console.WriteLine("\nInformações do arquivo:");
+        Console.WriteLine($"Nome: {info.Name}");
+        Console.WriteLine($"Caminho completo: {info.FullName}");
+        Console.WriteLine($"Tamanho: {info.Length} bytes");
+        Console.WriteLine($"Data de criação: {info.CreationTime}");
+        Console.WriteLine($"Último acesso: {info.LastAccessTime}");
+        Console.WriteLine($"Última modificação: {info.LastWriteTime}");
+    }
+}
