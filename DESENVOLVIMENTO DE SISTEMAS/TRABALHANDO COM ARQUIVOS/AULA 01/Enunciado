@@ -2,7 +2,7 @@
 
 Alterar o código "menu_arquivos" para executar as seguintes tarefas:
     1- Permitir que o usuário entre com o nome do arquivo a ser salvo;
-    2-Ao criar um novo arquivo, caso ele exista, perguntar se o usuário quer sobrescrever os dados ou alterar o nome.
+    2- Ao criar um novo arquivo, caso ele exista, perguntar se o usuário quer sobrescrever os dados ou alterar o nome.
     3- adicionar ao menu a opção de salvar o arquivo como .csv
 
 ** -- **
