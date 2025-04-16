@@ -1,0 +1,12 @@
+** EXERCÍCIO 2: **
+Classe "Temperatura" com Conversão Interna.
+
+Crie uma classe Temperatura que:
+    Armazena internamente o valor em Celsius (campo privado).
+    Tenha uma propriedade Celsius para leitura/escrita (com validação para valores >= -273.15).
+    Tenha uma propriedade Fahrenheit que faz conversão automática (apenas leitura).
+
+Regra:
+    A propriedade Fahrenheit não armazena valor diretamente, apenas calcula com base em Celsius.
+
+** **
