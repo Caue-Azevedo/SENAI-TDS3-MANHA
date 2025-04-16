@@ -1,82 +1,87 @@
 using System;
+using System.Threading;
 
-    class ContaBancaria 
+class ContaBancaria
 {
-        private decimal saldo;          
-        private string numeroConta;
-        private string titular;    
-        private decimal valor;
+    private decimal saldo;
+    private string numeroConta = "";
+    private string titular = "";
+    private decimal valor;
 
-        public decimal Valor
-        {
-            get => valor;
-            set => saldo = value;
-        }                                                 
-    
-    
-        public decimal Saldo 
-        {
-            get => saldo;
-            set => saldo = value;
-        }
-        public string Titular
-        {
-            get => titular;
-            set => titular = value;
-        }
-        public string NumeroConta
-        {
-            get => numeroConta;
-            set => numeroConta = value;
-        }
+    public decimal Valor
+    {
+        get => valor;
+        set => valor = value;
+    }
 
-        public void Depositar(decimal valor)
+    public decimal Saldo
+    {
+        get => saldo;
+        set => saldo = value;
+    }
+
+    public string Titular
+    {
+        get => titular;
+        set => titular = value;
+    }
+
+    public string NumeroConta
+    {
+        get => numeroConta;
+        set => numeroConta = value;
+    }
+
+    public void Depositar(decimal valor)
+    {
+        if (valor > 0)
         {
-            if (valor == 0)
-            {
-                saldo += valor;
-                Console.WriteLine("+---------------------------------------+");
-                Console.WriteLine("|    Depósito realizado com sucesso!    |");
-                Console.WriteLine("+---------------------------------------+");
-            }
-            else 
-            {
-                Console.WriteLine("+---------------------------------------+");
-                Console.WriteLine("|        Insira um valor válido!        |");
-                Console.WriteLine("+---------------------------------------+");
-            }
+            saldo += valor;
+            Console.WriteLine("+---------------------------------------+");
+            Console.WriteLine("|    Depósito realizado com sucesso!    |");
+            Console.WriteLine("+---------------------------------------+");
         }
-        public void Sacar(decimal valor) 
+        else
         {
-            if (valor <= saldo && valor > 0)
-            {
-                saldo -= valor;
-                Console.WriteLine("+---------------------------------------+");
-                Console.WriteLine("|     Saque realizado com sucesso!      |");
-                Console.WriteLine("+---------------------------------------+");
-            }
-            else
-                {                
-                Console.WriteLine("+---------------------------------------------+");
-                Console.WriteLine("|    Valor inválido ou saldo insuficiente.    |");
-                Console.WriteLine("+---------------------------------------------+");
-                }
+            Console.WriteLine("+---------------------------------------+");
+            Console.WriteLine("|        Insira um valor válido!        |");
+            Console.WriteLine("+---------------------------------------+");
         }
-        public void VerificarSaldo()
+    }
+
+    public void Sacar(decimal valor)
+    {
+        if (valor <= saldo && valor > 0)
+        {
+            saldo -= valor;
+            Console.WriteLine("+---------------------------------------+");
+            Console.WriteLine("|     Saque realizado com sucesso!      |");
+            Console.WriteLine("+---------------------------------------+");
+        }
+        else
         {
             Console.WriteLine("+---------------------------------------------+");
-            Console.WriteLine($"| Saldo atual: R${saldo:F2}");
+            Console.WriteLine("|    Valor inválido ou saldo insuficiente.    |");
             Console.WriteLine("+---------------------------------------------+");
         }
+    }
 
+    public void VerificarSaldo()
+    {
+        Console.WriteLine("+---------------------------------------------+");
+        Console.WriteLine($"| Saldo atual: R${saldo:F2}");
+        Console.WriteLine("+---------------------------------------------+");
+    }
 }
+
 
 class Program
 {
     static void Main()
     {
-        ContaBancaria contaBancaria= new ContaBancaria();
+        ContaBancaria contaBancaria = new ContaBancaria();
         int opcao = 0;
+
         Console.Clear();
         Console.WriteLine("+--------------------------------------+");
         Console.WriteLine("|           Sistema bancário           |");
@@ -90,7 +95,6 @@ class Program
 
         do
         {
-
             Console.Clear();
             Console.WriteLine("+--------------------------------+");
             Console.WriteLine($"|   Menu da Conta Nº {contaBancaria.NumeroConta}");
@@ -111,27 +115,50 @@ class Program
                 continue;
             }
 
-            switch (opcao) {
+            switch (opcao)
+            {
                 case 1:
-                    Console.Clear();
-                    Console.WriteLine("+---------------------------------------------+");
-                    Console.WriteLine("|          Opção escolhida: depósito          |");
-                    Console.WriteLine("+---------------------------------------------+");
-                    Console.Write("| Valor para depósito: R$");
-                    contaBancaria.Valor = Decimal.Parse(Console.ReadLine());
-                    contaBancaria.Depositar(contaBancaria.Valor);
-                    Thread.Sleep(1000);
+                    try
+                    {
+                        Console.Clear();
+                        Console.WriteLine("+---------------------------------------------+");
+                        Console.WriteLine("|          Opção escolhida: depósito          |");
+                        Console.WriteLine("+---------------------------------------------+");
+                        Console.Write("| Valor para depósito: R$");
+                        contaBancaria.Valor = Decimal.Parse(Console.ReadLine());
+                        contaBancaria.Depositar(contaBancaria.Valor);
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("| Erro: valor inválido! Use apenas números.");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"| Erro inesperado: {ex.Message}");
+                    }
+                    Thread.Sleep(1500);
                     break;
 
                 case 2:
-                    Console.Clear();
-                    Console.WriteLine("+---------------------------------------------+");
-                    Console.WriteLine("|            Opção escolhida: Saque           |");
-                    Console.WriteLine("+---------------------------------------------+");
-                    Console.Write("| Valor para saque: R$");
-                    contaBancaria.Valor = Decimal.Parse(Console.ReadLine());
-                    contaBancaria.Sacar(contaBancaria.Valor);
-                    Thread.Sleep(1000);
+                    try
+                    {
+                        Console.Clear();
+                        Console.WriteLine("+---------------------------------------------+");
+                        Console.WriteLine("|            Opção escolhida: Saque           |");
+                        Console.WriteLine("+---------------------------------------------+");
+                        Console.Write("| Valor para saque: R$");
+                        contaBancaria.Valor = Decimal.Parse(Console.ReadLine());
+                        contaBancaria.Sacar(contaBancaria.Valor);
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine("| Erro: valor inválido! Use apenas números.");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"| Erro inesperado: {ex.Message}");
+                    }
+                    Thread.Sleep(1500);
                     break;
 
                 case 3:
@@ -151,7 +178,7 @@ class Program
                     Console.WriteLine("+-------------------+");
                     Console.WriteLine("|  Opção inválida.  |");
                     Console.WriteLine("+-------------------+");
-                    break;           
+                    break;
             }
 
             Console.WriteLine();
