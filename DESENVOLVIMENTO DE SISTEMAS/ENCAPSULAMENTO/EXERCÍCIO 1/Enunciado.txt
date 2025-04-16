@@ -1,0 +1,14 @@
+** EXERCÍCIO 1: ** 
+Classe "ContaBancaria" com Métodos de Transação.
+
+Crie uma classe ContaBancaria com:
+    Campo privado saldo (decimal).
+    Propriedade pública somente leitura para NumeroConta (string).
+    Métodos públicos Depositar(decimal valor) e Sacar(decimal valor) que atualizam o saldo.
+
+Regras:
+    Não permitir saldo negativo.
+    O número da conta não pode ser alterado após a criação.
+    O saldo só pode ser modificado pelos métodos de transação.
+
+** **
