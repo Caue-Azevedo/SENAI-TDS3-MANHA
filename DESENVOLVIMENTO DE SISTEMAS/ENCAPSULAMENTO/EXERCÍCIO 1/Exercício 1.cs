@@ -6,18 +6,11 @@ class ContaBancaria
     private decimal saldo;
     private string numeroConta = "";
     private string titular = "";
-    private decimal valor;
-
-    public decimal Valor
-    {
-        get => valor;
-        set => valor = value;
-    }
 
     public decimal Saldo
     {
         get => saldo;
-        set => saldo = value;
+        private set => saldo = value;
     }
 
     public string Titular
@@ -86,9 +79,10 @@ class Program
         Console.WriteLine("+--------------------------------------+");
         Console.WriteLine("|           Sistema bancário           |");
         Console.WriteLine("+--------------------------------------+");
-        Console.WriteLine("| Criando conta...                     |");
         Console.Write("| Insira o número da conta: \n| ");
         contaBancaria.NumeroConta = Console.ReadLine();
+        Console.Write("| Insira o nome do titular: \n| ");
+        contaBancaria.Titular = Console.ReadLine();
         Console.WriteLine("\n+--------------------------------------+");
         Console.WriteLine("|       Conta criada com sucesso!      |");
         Console.WriteLine("+--------------------------------------+");
@@ -98,6 +92,7 @@ class Program
             Console.Clear();
             Console.WriteLine("+--------------------------------+");
             Console.WriteLine($"|   Menu da Conta Nº {contaBancaria.NumeroConta}");
+            Console.WriteLine("|   Titular: " + contaBancaria.Titular);
             Console.WriteLine("+--------------------------------+");
             Console.WriteLine("| 1 - Depositar                  |");
             Console.WriteLine("| 2 - Sacar                      |");
@@ -122,11 +117,11 @@ class Program
                     {
                         Console.Clear();
                         Console.WriteLine("+---------------------------------------------+");
-                        Console.WriteLine("|          Opção escolhida: depósito          |");
+                        Console.WriteLine("|          Opção escolhida: Depósito          |");
                         Console.WriteLine("+---------------------------------------------+");
                         Console.Write("| Valor para depósito: R$");
-                        contaBancaria.Valor = Decimal.Parse(Console.ReadLine());
-                        contaBancaria.Depositar(contaBancaria.Valor);
+                        decimal valorDeposito = Decimal.Parse(Console.ReadLine());
+                        contaBancaria.Depositar(valorDeposito);
                     }
                     catch (FormatException)
                     {
@@ -147,8 +142,8 @@ class Program
                         Console.WriteLine("|            Opção escolhida: Saque           |");
                         Console.WriteLine("+---------------------------------------------+");
                         Console.Write("| Valor para saque: R$");
-                        contaBancaria.Valor = Decimal.Parse(Console.ReadLine());
-                        contaBancaria.Sacar(contaBancaria.Valor);
+                        decimal valorSaque = Decimal.Parse(Console.ReadLine());
+                        contaBancaria.Sacar(valorSaque);
                     }
                     catch (FormatException)
                     {
