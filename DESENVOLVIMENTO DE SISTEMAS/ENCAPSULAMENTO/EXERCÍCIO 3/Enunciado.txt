@@ -1,0 +1,11 @@
+** EXERCÍCIO 3: **
+Classe "Aluno" com Controle de Notas.
+
+Crie uma classe Aluno com:
+    Campo privado notas (lista de double).
+    Propriedade pública Media (apenas leitura) que calcula a média das notas.
+    Método público AdicionarNota(double nota) que só aceita valores entre 0 e 10.
+    Método público RemoverUltimaNota().
+
+Regra:
+    A lista de notas não pode ser acessada ou modificada diretamente de fora da classe.
