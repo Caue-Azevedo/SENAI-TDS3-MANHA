@@ -1,0 +1,36 @@
+** EXERCÍCIO 1: **
+
+Crie uma calculadora que:
+    Peça dois números e uma operação (+,  -,  *,  /).
+    Use try-catch para tratar:
+    Divisão por zero (DivideByZeroException).
+    Formato inválido (FormatException).
+    Operação inválida (ArgumentException).
+
+** **
+
+** 1.1 **
+Peça ao usuário um caminho de arquivo e tente ler seu conteúdo. Trate:
+    Arquivo não encontrado (FileNotFoundException).
+    Erro genérico de IO (IOException).
+
+** **
+
+** 1.2 **
+Simule uma conexão com banco de dados que pode falhar aleatoriamente. 
+Use try-catch-finally para garantir que a conexão seja "fechada" mesmo com erros.
+
+** **
+
+** 1.3 **
+Crie uma exceção personalizada IdadeInvalidaException e lance-a se o usuário digitar uma idade negativa ou acima de 120 anos.
+
+** **
+
+** 1.4 **
+Peça ao usuário uma lista de números separados por vírgula e calcule a média. Trate:
+    Entrada vazia (ArgumentNullException).
+    Números inválidos (FormatException).
+    Overflow (OverflowException).
+
+** **
