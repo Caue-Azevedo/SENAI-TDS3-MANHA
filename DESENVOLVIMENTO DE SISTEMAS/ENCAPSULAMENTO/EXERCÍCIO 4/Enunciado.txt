@@ -1,0 +1,15 @@
+** EXERCÍCIO 4: **
+Classe "Livro" com Validação de ISBN
+
+Crie uma classe Livro com:
+    Campos privados titulo e ISBN.
+
+Propriedades públicas com validações:
+    ISBN deve ter exatamente 13 caracteres numéricos.
+    Titulo não pode ser vazio.
+    Método privado ValidarISBN(string isbn) para verificar o formato.
+
+Regra:
+    O ISBN só pode ser definido durante a criação do objeto.
+
+** **
