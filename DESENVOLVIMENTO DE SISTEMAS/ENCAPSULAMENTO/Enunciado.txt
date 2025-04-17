@@ -1,0 +1,75 @@
+** EXERCÍCIO 1: ** 
+Classe "ContaBancaria" com Métodos de Transação.
+
+Crie uma classe ContaBancaria com:
+    Campo privado saldo (decimal).
+    Propriedade pública somente leitura para NumeroConta (string).
+    Métodos públicos Depositar(decimal valor) e Sacar(decimal valor) que atualizam o saldo.
+
+Regras:
+    Não permitir saldo negativo.
+    O número da conta não pode ser alterado após a criação.
+    O saldo só pode ser modificado pelos métodos de transação.
+
+** **
+
+** EXERCÍCIO 2: **
+Classe "Temperatura" com Conversão Interna.
+
+Crie uma classe Temperatura que:
+    Armazena internamente o valor em Celsius (campo privado).
+    Tenha uma propriedade Celsius para leitura/escrita (com validação para valores >= -273.15).
+    Tenha uma propriedade Fahrenheit que faz conversão automática (apenas leitura).
+
+Regra:
+    A propriedade Fahrenheit não armazena valor diretamente, apenas calcula com base em Celsius.
+
+** **
+
+** EXERCÍCIO 3: **
+Classe "Aluno" com Controle de Notas.
+
+Crie uma classe Aluno com:
+    Campo privado notas (lista de double).
+    Propriedade pública Media (apenas leitura) que calcula a média das notas.
+    Método público AdicionarNota(double nota) que só aceita valores entre 0 e 10.
+    Método público RemoverUltimaNota().
+
+Regra:
+    A lista de notas não pode ser acessada ou modificada diretamente de fora da classe.
+
+** **
+
+** EXERCÍCIO 4: **
+Classe "Livro" com Validação de ISBN
+
+Crie uma classe Livro com:
+    Campos privados titulo e ISBN.
+
+Propriedades públicas com validações:
+    ISBN deve ter exatamente 13 caracteres numéricos.
+    Titulo não pode ser vazio.
+    Método privado ValidarISBN(string isbn) para verificar o formato.
+
+Regra:
+    O ISBN só pode ser definido durante a criação do objeto.
+
+** **
+
+** EXERCÍCIO 5: **
+Classe "Playlist" com Gerenciamento de Músicas
+
+Crie uma classe Playlist que:
+    Armazena uma lista privada de strings (nomes de músicas).
+    Tem uma propriedade DuracaoTotal (calculada com base em uma lógica interna).
+      
+Métodos públicos:
+    AdicionarMusica(string nome, int duracaoSegundos).
+    RemoverMusica(string nome).
+    ListarMusicas().
+
+Regras:
+    Não permitir músicas duplicadas.
+    A lista de músicas não pode ser modificada diretamente.  
+
+** **
