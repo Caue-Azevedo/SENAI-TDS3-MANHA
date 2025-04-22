@@ -1,0 +1,53 @@
+** Exercício 6: **  
+Herança com Construtores em Cadeia.  
+
+Crie um sistema de herança com três classes: Veiculo, Carro (herda de Veiculo) e CarroEsportivo (herda de Carro).  
+Implemente uma cadeia de construtores que obrigue a inicialização de todas as propriedades em cada nível.
+
+** **  
+------------------------------------------------------------------------------------------------------------------
+
+** Exercício 7: **  
+Singleton Thread-Safe com Destruição Controlada.  
+
+Implemente um padrão Singleton thread-safe com:  
+    Construtor privado.  
+    Instância acessível via propriedade estática.  
+    Destruição controlada que só ocorre quando explicitamente solicitado.  
+    Método Dispose() que limpa os recursos. 
+
+** **  
+------------------------------------------------------------------------------------------------------------------  
+
+** Exercício 8: **  
+Pool de Objetos com Reutilização.  
+
+Crie uma classe PoolDeConexoes que:  
+    Mantenha um conjunto fixo de instâncias reutilizáveis.  
+    Tenha um construtor estático para inicialização do pool.  
+    Use destrutores para recolher instâncias vazando.  
+    Implemente um mecanismo de empréstimo e devolução.  
+
+** **  
+------------------------------------------------------------------------------------------------------------------  
+
+** Exercício 9: **  
+Injeção de Dependência com Construtores.  
+
+Implemente um sistema simples de Injeção de Dependência (DI) onde:  
+    ServicoEmail depende de ILogger.  
+    LoggerArquivo implementa ILogger com destrutor para fechar arquivo.  
+    LoggerConsole implementa ILogger sem recursos para liberar.  
+    O construtor de ServicoEmail deve receber a dependência.
+
+** **
+
+** **  
+------------------------------------------------------------------------------------------------------------------  
+
+**Exercício 10:**  
+Padrão Builder com Validação no Construtor.  
+Implemente uma classe Produto com complexa validação no construtor e um Builder para construção gradual.
+
+** **  
+------------------------------------------------------------------------------------------------------------------  
