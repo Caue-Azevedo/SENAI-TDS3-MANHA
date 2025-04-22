@@ -1,0 +1,51 @@
+** Exercício 1: **
+Construtor Básico.
+
+Crie uma classe Livro com as propriedades Titulo (string), Autor (string) e AnoPublicacao (int). 
+Implemente:
+    Um construtor padrão que inicializa os valores com "Desconhecido", "Anônimo" e 0 respectivamente.
+    Um construtor que recebe todos os três parâmetros.
+    Um método ExibirDetalhes() que mostra as informações do livro.
+
+** **
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Exercício 2: **
+Construtor de Cópia.
+
+Crie uma classe Carro com propriedades Modelo, Marca e Ano. 
+Implemente:
+    Um construtor com parâmetros.
+    Um construtor de cópia.
+    Um destrutor que exiba uma mensagem quando o objeto for destruído.
+
+** **
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+** Exercício 3: **
+Encadeamento de Construtores.
+Modifique a classe Pessoa do exemplo inicial para usar encadeamento de construtores (um construtor chamando outro usando : this()):
+
+** **
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+** Exercício 4: **
+Contador de Instâncias.
+
+Crie uma classe Contador que:
+    Tenha uma propriedade estática TotalInstancias.
+    Incremente TotalInstancias no construtor.
+    Decremente TotalInstancias no destrutor.
+    Tenha um método estático MostrarTotal().
+
+** **
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+** Exercício 5: ** 
+Gerenciamento de Recursos.
+
+Crie uma classe ArquivoLogger que simule o registro em arquivo:
+    No construtor, "abra" o arquivo (simule com Console.WriteLine).
+    Implemente o método Log(string mensagem) que "escreve" no arquivo.
+    No destrutor, "feche" o arquivo.
+    Implemente a interface IDisposable com o padrão dispose.
+
+** **
