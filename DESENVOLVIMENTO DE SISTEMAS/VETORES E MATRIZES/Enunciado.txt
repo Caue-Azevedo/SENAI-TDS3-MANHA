@@ -60,7 +60,8 @@ gere dois vetores a partir dele: um contendo os elementos das posições ímpare
 ** **
 
 ** EXERCÍCIO 10: **  
-  Uma locadora de vídeos possui, em um vetor de 50 posições, a quantidade de filmes retirados por seus clientes durante o ano de 2012. Agora, essa locadora está fazendo uma promoção e, para cada 10 filmes retirados, o cliente tem direito a uma locação
+  Uma locadora de vídeos possui, em um vetor de 50 posições, a quantidade de filmes retirados por seus clientes durante o ano de 2012.
+Agora, essa locadora está fazendo uma promoção e, para cada 10 filmes retirados, o cliente tem direito a uma locação
 grátis. Faça um algoritmo que crie outro vetor contendo a quantidade de locações gratuitas a que cada cliente tem direito.
 
 ** **
