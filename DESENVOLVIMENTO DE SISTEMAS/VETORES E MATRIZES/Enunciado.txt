@@ -1,52 +1,68 @@
 ** EXERCÍCIO 1: **  
-Faça um algoritmo que leia 10 salários. Depois de lidos e armazenados, mostre o maior valor. Utilize vetores.
+  Faça um algoritmo que leia 10 salários. Depois de lidos e armazenados, mostre o maior valor. Utilize vetores.
 
 ** **
 
 ** EXERCÍCIO 2: **  
-Armazene, em um vetor de 5 posições, o salário de 5 pessoas. Se o salário for menor que 1000 reais, forneça um aumento de 10% e sobrescreva o valor antigo. Ao final, mostre a lista de salários atualizada.
+  Armazene, em um vetor de 5 posições, o salário de 5 pessoas. Se o salário for menor que 1000 reais, 
+forneça um aumento de 10% e sobrescreva o valor antigo. Ao final, mostre a lista de salários atualizada.
 
 ** **
 
 ** EXERCÍCIO 3: **  
-Faça um programa que leia *n* valores reais. Armazene esses valores em um vetor. Ao final, imprima a média aritmética desses valores.
+  Faça um programa que leia *n* valores reais. Armazene esses valores em um vetor. 
+Ao final, imprima a média aritmética desses valores.
 
 ** EXERCÍCIO 4: **  
-Faça um programa que pergunte ao usuário o número de alunos a ser lido. O tamanho dos vetores será o número informado pelo usuário. Armazene, em um vetor, as notas G1 desses alunos; em outro vetor, armazene as notas G2. Ambas as notas são informadas pelo usuário. Calcule a média aritmética dos alunos e armazene em um terceiro vetor. Ao final, mostre as três notas de cada aluno.
+Faça um programa que pergunte ao usuário o número de alunos a ser lido. O tamanho dos vetores será o número informado
+pelo usuário. Armazene, em um vetor, as notas G1 desses alunos; em outro vetor, armazene as notas G2. 
+Ambas as notas são informadas pelo usuário. Calcule a média aritmética dos alunos e armazene em um terceiro vetor. 
+Ao final, mostre as três notas de cada aluno.
 
 ** **
 
 ** EXERCÍCIO 5: **  
-Faça um algoritmo que leia e armazene 5 valores inteiros em um vetor Vet1. Leia outros 5 valores inteiros e armazene em um vetor Vet2. A partir desses valores lidos, mostre na tela:  
-a. A soma dos elementos de cada vetor, nas respectivas posições.  
-b. A diferença dos elementos de cada vetor, nas respectivas posições.  
-c. O produto dos elementos de cada vetor, nas respectivas posições.  
-d. A divisão entre os elementos de cada vetor, nas respectivas posições.
+Faça um algoritmo que leia e armazene 5 valores inteiros em um vetor Vet1. 
+Leia outros 5 valores inteiros e armazene em um vetor Vet2. A partir desses valores lidos, mostre na tela:  
+  a. A soma dos elementos de cada vetor, nas respectivas posições.  
+  b. A diferença dos elementos de cada vetor, nas respectivas posições.  
+  c. O produto dos elementos de cada vetor, nas respectivas posições.  
+  d. A divisão entre os elementos de cada vetor, nas respectivas posições.
 
 ** **
 
 ** EXERCÍCIO 6: **  
-Escreva um algoritmo que leia um vetor de 20 posições e o mostre. Em seguida, troque o primeiro elemento com o último, o segundo com o penúltimo, o terceiro com o antepenúltimo, e assim sucessivamente. Mostre o novo vetor após a troca.
+Escreva um algoritmo que leia um vetor de 20 posições e o mostre. Em seguida, troque o primeiro elemento com o último, 
+o segundo com o penúltimo, o terceiro com o antepenúltimo, e assim sucessivamente. Mostre o novo vetor após a troca.
 
 ** **
 
 ** EXERCÍCIO 7: **  
-Escreva um algoritmo que leia um vetor de 13 elementos inteiros, que é o gabarito de um teste da loteria esportiva, contendo os valores 1 (coluna 1), 2 (coluna 2) e 3 (coluna do meio). Leia, a seguir, para cada apostador, o número do seu cartão e um vetor de respostas com 13 posições. Verifique, para cada apostador, o número de acertos, comparando o vetor do gabarito com o vetor de respostas. Escreva o número do apostador e o número de acertos. Se o apostador tiver 13 acertos, mostre a mensagem "Ganhador".
+Escreva um algoritmo que leia um vetor de 13 elementos inteiros, que é o gabarito de um teste da loteria esportiva, 
+contendo os valores 1 (coluna 1), 2 (coluna 2) e 3 (coluna do meio). Leia, a seguir, para cada apostador, 
+o número do seu cartão e um vetor de respostas com 13 posições. Verifique, para cada apostador, o número de acertos, 
+comparando o vetor do gabarito com o vetor de respostas. Escreva o número do apostador e o número de acertos. 
+Se o apostador tiver 13 acertos, mostre a mensagem "Ganhador".
 
 ** **
 
 ** EXERCÍCIO 8: **  
-Escreva um algoritmo que leia um vetor de 10 posições com números inteiros e o imprima. Em seguida, gere dois vetores a partir dele: um contendo os elementos das posições ímpares e o outro contendo os elementos das posições pares. Imprima ambos ao final.
+Escreva um algoritmo que leia um vetor de 10 posições com números inteiros e o imprima. Em seguida, 
+gere dois vetores a partir dele: um contendo os elementos das posições ímpares e o outro contendo os elementos das posições pares.
+Imprima ambos ao final.
 
 ** **
 
 ** EXERCÍCIO 9: **  
-Escreva um algoritmo que leia um vetor *K* com 15 elementos e o exiba. Crie, em seguida, um vetor *P* que contenha todos os números primos presentes em *K*. Escreva o vetor *P*.
+Escreva um algoritmo que leia um vetor *K* com 15 elementos e o exiba.
+Crie, em seguida, um vetor *P* que contenha todos os números primos presentes em *K*. Escreva o vetor *P*.
 
 ** **
 
 ** EXERCÍCIO 10: **  
-Uma locadora de vídeos possui, em um vetor de 50 posições, a quantidade de filmes retirados por seus clientes durante o ano de 2012. Agora, essa locadora está fazendo uma promoção e, para cada 10 filmes retirados, o cliente tem direito a uma locação grátis. Faça um algoritmo que crie outro vetor contendo a quantidade de locações gratuitas a que cada cliente tem direito.
+Uma locadora de vídeos possui, em um vetor de 50 posições, a quantidade de filmes retirados por seus clientes durante o ano 
+de 2012. Agora, essa locadora está fazendo uma promoção e, para cada 10 filmes retirados, o cliente tem direito a uma locação
+grátis. Faça um algoritmo que crie outro vetor contendo a quantidade de locações gratuitas a que cada cliente tem direito.
 
 ** **
 
@@ -66,12 +82,14 @@ Transposição de matriz: crie uma função que receba uma matriz quadrada e ret
 ** **
 
 ** EXERCÍCIO 14: **  
-Verificação de matriz identidade: verifique se uma matriz quadrada é uma matriz identidade (diagonal principal com 1s e os demais elementos iguais a 0).
+Verificação de matriz identidade: verifique se uma matriz quadrada é uma matriz identidade (diagonal principal com 1s e os
+demais elementos iguais a 0).
 
 ** **
 
 ** EXERCÍCIO 15: **  
-Multiplicação de matrizes: implemente a multiplicação de duas matrizes (lembrando que o número de colunas da primeira deve ser igual ao número de linhas da segunda).
+Multiplicação de matrizes: implemente a multiplicação de duas matrizes (lembrando que o número de colunas da primeira deve
+ser igual ao número de linhas da segunda).
 
 ** **
 
