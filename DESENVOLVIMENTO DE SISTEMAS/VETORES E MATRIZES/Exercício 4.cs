@@ -7,10 +7,12 @@ class Program
         try
         {
             Console.Clear();
-
             Console.WriteLine("+---------------------------------------+");
-            double[] medias = LerMedias();
-            double media = CalcularMedia(medias);
+
+            GerenciadorNotas gerenciador = new GerenciadorNotas();
+            gerenciador.LerNotas();
+            double mediaGeral = gerenciador.CalcularMediaGeral();
+
             Console.WriteLine("+---------------------------------------+\n");
         }
         catch (Exception ex)
@@ -18,8 +20,15 @@ class Program
             Console.WriteLine($"Ocorreu um erro: {ex.Message}");
         }
     }
+}
 
-    static double[] LerMedias()
+class GerenciadorNotas
+{
+    private double[] notasG1;
+    private double[] notasG2;
+    private double[] medias;
+
+    public void LerNotas()
     {
         int quantidadeAlunos;
         while (true)
@@ -37,9 +46,9 @@ class Program
             }
         }
 
-        double[] notasG1 = new double[quantidadeAlunos];
-        double[] notasG2 = new double[quantidadeAlunos];
-        double[] medias = new double[quantidadeAlunos];
+        notasG1 = new double[quantidadeAlunos];
+        notasG2 = new double[quantidadeAlunos];
+        medias = new double[quantidadeAlunos];
 
         for (int i = 0; i < quantidadeAlunos; i++)
         {
@@ -48,16 +57,14 @@ class Program
                 try
                 {
                     Console.Write($"| Digite a nota G1 do {i + 1}º aluno: ");
-                    string entradaG1 = Console.ReadLine();
-                    if (!double.TryParse(entradaG1, out double nota1))
+                    if (!double.TryParse(Console.ReadLine(), out double nota1))
                     {
                         Console.WriteLine("| Valor inválido. Digite um número válido.");
                         continue;
                     }
 
                     Console.Write($"| Digite a nota G2 do {i + 1}º aluno: ");
-                    string entradaG2 = Console.ReadLine();
-                    if (!double.TryParse(entradaG2, out double nota2))
+                    if (!double.TryParse(Console.ReadLine(), out double nota2))
                     {
                         Console.WriteLine("| Valor inválido. Digite um número válido.");
                         continue;
@@ -82,17 +89,15 @@ class Program
         {
             Console.WriteLine($"| Aluno {i + 1}: G1 = {notasG1[i]}, G2 = {notasG2[i]}, Média = {medias[i]:F2}");
         }
-
-        return medias;
     }
 
-    static double CalcularMedia(double[] valores)
+    public double CalcularMediaGeral()
     {
         double soma = 0;
-        foreach (var valor in valores)
+        foreach (var media in medias)
         {
-            soma += valor;
+            soma += media;
         }
-        return soma / valores.Length;
+        return medias.Length > 0 ? soma / medias.Length : 0;
     }
 }
