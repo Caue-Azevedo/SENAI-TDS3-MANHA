@@ -7,34 +7,33 @@ class Program
         try
         {
             Console.Clear();
-            Console.WriteLine("+---------------------------------------+");
+            Console.WriteLine("+-------------------------------------------------+");
 
-            double[] numeros = LerEntradaVetores();
+            CalculadoraVetores calculadora = new CalculadoraVetores();
+            calculadora.LerEntradaVetores();
 
-            double soma = CalcularSoma(numeros);
-            double subtracao = CalcularSubtracao(numeros);
-            double multiplicacao = CalcularMultiplicacao(numeros);
-            double divisao = CalcularDivisao(numeros);
+            Console.WriteLine("\n| Resultados das operações:");
+            Console.WriteLine("| Soma:           " + string.Join(", ", calculadora.Operar('+')));
+            Console.WriteLine("| Subtração:      " + string.Join(", ", calculadora.Operar('-')));
+            Console.WriteLine("| Multiplicação:  " + string.Join(", ", calculadora.Operar('*')));
+            Console.WriteLine("| Divisão:        " + string.Join(", ", calculadora.Operar('/')));
 
-            Console.WriteLine($"| Soma dos elementos: {soma}");
-            Console.WriteLine($"| Subtração dos elementos: {subtracao}");
-            Console.WriteLine($"| Multiplicação dos elementos: {multiplicacao}");
-            Console.WriteLine($"| Divisão dos elementos: {divisao}");
-
-            Console.WriteLine("+---------------------------------------+\n");
+            Console.WriteLine("+-------------------------------------------------+\n");
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Ocorreu um erro: {ex.Message}");
         }
     }
+}
 
-    static double[] LerEntradaVetores()
+class CalculadoraVetores
+{
+    private double[] vet1 = new double[5];
+    private double[] vet2 = new double[5];
+
+    public void LerEntradaVetores()
     {
-        double[] vet1 = new double[5];
-        double[] vet2 = new double[5];
-        double[] resultados = new double[5];
-
         for (int i = 0; i < 5; i++)
         {
             while (true)
@@ -42,24 +41,19 @@ class Program
                 try
                 {
                     Console.Write($"| Digite o valor da posição {i} do vetor 1: ");
-                    string entradaVet1 = Console.ReadLine();
-                    if (!double.TryParse(entradaVet1, out double vetor1))
+                    if (!double.TryParse(Console.ReadLine(), out vet1[i]))
                     {
                         Console.WriteLine("| Valor inválido. Digite um número válido.");
                         continue;
                     }
 
                     Console.Write($"| Digite o valor da posição {i} do vetor 2: ");
-                    string entradaVet2 = Console.ReadLine();
-                    if (!double.TryParse(entradaVet2, out double vetor2))
+                    if (!double.TryParse(Console.ReadLine(), out vet2[i]))
                     {
                         Console.WriteLine("| Valor inválido. Digite um número válido.");
                         continue;
                     }
 
-                    vet1[i] = vetor1;
-                    vet2[i] = vetor2;
-                    resultados[i] = vetor1 + vetor2;
                     break;
                 }
                 catch (Exception ex)
@@ -68,50 +62,31 @@ class Program
                 }
             }
         }
-
-        return resultados;
     }
 
-    static double CalcularSoma(double[] valores)
+    public double[] Operar(char operacao)
     {
-        double soma = 0;
-        foreach (var valor in valores)
-        {
-            soma += valor;
-        }
-        return soma;
-    }
+        double[] resultado = new double[5];
 
-    static double CalcularSubtracao(double[] valores)
-    {
-        double subtracao = valores[0];
-        for (int i = 1; i < valores.Length; i++)
+        for (int i = 0; i < 5; i++)
         {
-            subtracao -= valores[i];
+            switch (operacao)
+            {
+                case '+':
+                    resultado[i] = vet1[i] + vet2[i];
+                    break;
+                case '-':
+                    resultado[i] = vet1[i] - vet2[i];
+                    break;
+                case '*':
+                    resultado[i] = vet1[i] * vet2[i];
+                    break;
+                case '/':
+                    resultado[i] = vet2[i] != 0 ? vet1[i] / vet2[i] : double.NaN;
+                    break;
+            }
         }
-        return subtracao;
-    }
 
-    static double CalcularMultiplicacao(double[] valores)
-    {
-        double multiplicacao = 1;
-        foreach (var valor in valores)
-        {
-            multiplicacao *= valor;
-        }
-        return multiplicacao;
-    }
-
-    static double CalcularDivisao(double[] valores)
-    {
-        double divisao = valores[0];
-        for (int i = 1; i < valores.Length; i++)
-        {
-            if (valores[i] != 0)
-                divisao /= valores[i];
-            else
-                return double.NaN;
-        }
-        return divisao;
+        return resultado;
     }
 }
