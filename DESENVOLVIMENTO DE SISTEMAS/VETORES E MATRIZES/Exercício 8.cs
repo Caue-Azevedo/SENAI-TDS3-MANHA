@@ -91,6 +91,6 @@ class VetorDividido
         {
             Console.Write(item + " ");
         }
-        Console.WriteLine(); // Nova linha após o vetor par
+        Console.WriteLine();
     }
 }
