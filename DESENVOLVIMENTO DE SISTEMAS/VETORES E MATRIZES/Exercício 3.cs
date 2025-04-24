@@ -9,8 +9,11 @@ class Program
             Console.Clear();
 
             Console.WriteLine("+---------------------------------------+");
-            double[] numeros = LerNumeros();
-            double media = CalcularMedia(numeros);
+
+            CalculadoraMedia calculadora = new CalculadoraMedia();
+            calculadora.LerNumeros();
+            double media = calculadora.CalcularMedia();
+
             Console.WriteLine("+---------------------------------------+\n");
             Console.WriteLine("\n+---------------------------------------+");
             Console.WriteLine($"| Média dos números: {media:F2}");
@@ -21,8 +24,13 @@ class Program
             Console.WriteLine($"Ocorreu um erro: {ex.Message}");
         }
     }
+}
 
-    static double[] LerNumeros()
+class CalculadoraMedia
+{
+    private double[] numeros;
+
+    public void LerNumeros()
     {
         int quantidadeNumeros;
         while (true)
@@ -40,7 +48,7 @@ class Program
             }
         }
 
-        double[] numeros = new double[quantidadeNumeros];
+        numeros = new double[quantidadeNumeros];
 
         for (int i = 0; i < quantidadeNumeros; i++)
         {
@@ -67,11 +75,9 @@ class Program
                 }
             }
         }
-
-        return numeros;
     }
 
-    static double CalcularMedia(double[] numeros)
+    public double CalcularMedia()
     {
         double soma = 0;
         for (int i = 0; i < numeros.Length; i++)
