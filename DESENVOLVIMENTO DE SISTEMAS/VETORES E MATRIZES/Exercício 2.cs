@@ -4,12 +4,21 @@ class Program
 {
     static void Main()
     {
-        double[] salarios = new double[5];
-        Console.Clear();
+        try
+        {
+            Console.Clear();
+            double[] salarios = new double[5];
 
-        LerSalarios(salarios);
-        AplicarAumento(salarios);
-        MostrarSalarios(salarios);
+            Console.WriteLine("+------------------------------+");
+            LerSalarios(salarios);
+            AplicarAumento(salarios);
+            MostrarSalarios(salarios);
+            Console.WriteLine("+------------------------------+");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ocorreu um erro: {ex.Message}");
+        }
     }
 
     static void LerSalarios(double[] salarios)
@@ -20,7 +29,7 @@ class Program
             {
                 try
                 {
-                    Console.Write($"Digite o {i + 1}º salário: ");
+                    Console.Write($"| Digite o {i + 1}º salário: ");
                     string entrada = Console.ReadLine();
 
                     if (double.TryParse(entrada, out double salario))
@@ -30,12 +39,12 @@ class Program
                     }
                     else
                     {
-                        Console.WriteLine("Valor inválido. Digite um número válido.");
+                        Console.WriteLine("| Valor inválido. Digite um número válido.");
                     }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Erro ao ler o salário: {ex.Message}");
+                    Console.WriteLine($"| Erro ao ler o salário: {ex.Message}");
                 }
             }
         }
@@ -54,10 +63,11 @@ class Program
 
     static void MostrarSalarios(double[] salarios)
     {
-        Console.WriteLine("\nLista atualizada de salários:");
+        Console.WriteLine("\n+------------------------------+");
+        Console.WriteLine("| Lista atualizada de salários:");
         for (int i = 0; i < salarios.Length; i++)
         {
-            Console.WriteLine($"{i + 1}º salário: {salarios[i]:F2}");
+            Console.WriteLine($"| {i + 1}º salário: {salarios[i]:F2}");
         }
     }
 }
