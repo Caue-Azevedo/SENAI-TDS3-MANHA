@@ -7,12 +7,13 @@ class Program
         try
         {
             Console.Clear();
-            double[] salarios = new double[5];
-
             Console.WriteLine("+------------------------------+");
-            LerSalarios(salarios);
-            AplicarAumento(salarios);
-            MostrarSalarios(salarios);
+
+            GerenciadorSalario gerente = new GerenciadorSalario(5);
+            gerente.LerSalarios();
+            gerente.AplicarAumento();
+            gerente.MostrarSalarios();
+
             Console.WriteLine("+------------------------------+");
         }
         catch (Exception ex)
@@ -20,8 +21,18 @@ class Program
             Console.WriteLine($"Ocorreu um erro: {ex.Message}");
         }
     }
+}
 
-    static void LerSalarios(double[] salarios)
+class GerenciadorSalario
+{
+    private double[] salarios;
+
+    public GerenciadorSalario(int quantidade)
+    {
+        salarios = new double[quantidade];
+    }
+
+    public void LerSalarios()
     {
         for (int i = 0; i < salarios.Length; i++)
         {
@@ -50,7 +61,7 @@ class Program
         }
     }
 
-    static void AplicarAumento(double[] salarios)
+    public void AplicarAumento()
     {
         for (int i = 0; i < salarios.Length; i++)
         {
@@ -61,7 +72,7 @@ class Program
         }
     }
 
-    static void MostrarSalarios(double[] salarios)
+    public void MostrarSalarios()
     {
         Console.WriteLine("\n+------------------------------+");
         Console.WriteLine("| Lista atualizada de salários:");
