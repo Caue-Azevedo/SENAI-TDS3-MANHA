@@ -1,0 +1,10 @@
+** TERCEIRO PROJETO **
+sistema de agendamento
+
+Desafio: Criar um sistema de agendamento com:
+  ● Campos: Nome, Data, Hora, Descrição
+  ● Botão para agendar (valide os dados)
+  ● ListBox para mostrar os agendamentos
+  ● Botão para limpar o formulário
+
+** **
