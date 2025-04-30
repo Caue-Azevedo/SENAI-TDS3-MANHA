@@ -1,16 +1,18 @@
 ** QUARTO PROJETO **
 Sistema de Biblioteca.
 
-Crie um sistema simples para gerenciar livros:
+Crie um sistema para gerenciar livros:
     ● Campos: Título, Autor, Ano, Gênero (ComboBox).
-    ● ListBox para exibir os livros cadastrados.
-    ● Botões:
-        ○ "Adicionar" - valida e adiciona o livro à lista.
-        ○ "Remover" - remove o livro selecionado.
-        ○ "Limpar" - limpa os campos.
+    
     ● Implemente:
         ○ Validação para garantir que título e autor não estão vazios.
         ○ Ano deve ser entre 1450 e o ano atual.
         ○ Ao selecionar um livro na lista, preencha os campos com seus dados.
+
+Criar outro form para “emprestimo” de Livros ListBox para exibir os livros cadastrados
+    ● Botões:
+        ○ "Adicionar" - valida e adiciona o livro à lista
+        ○ "Remover" - remove o livro selecionado
+        ○ "Limpar" - limpa os campos
 
 ** **
