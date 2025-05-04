@@ -42,6 +42,7 @@ namespace Biblioteca_
         public void MostrarTelaInicial()
         {
             this.Controls.Clear();
+
             InitializeComponent();
 
             lblInicial.Font = new Font("Arial", 12, FontStyle.Regular);
