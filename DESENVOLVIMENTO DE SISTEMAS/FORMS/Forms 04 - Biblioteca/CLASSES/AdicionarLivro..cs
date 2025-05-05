@@ -19,13 +19,6 @@ namespace Biblioteca_
             lblGenero.Font = new Font("Arial", 9, FontStyle.Regular);
             lblTitulo.Font = new Font("Arial", 9, FontStyle.Regular);
             btnLimpar.Font = new Font("Arial", 8, FontStyle.Regular);
-
-            cmbGenero.Items.Add("Ficção");
-            cmbGenero.Items.Add("Romance");
-            cmbGenero.Items.Add("Aventura");
-            cmbGenero.Items.Add("Mistério");
-            cmbGenero.Items.Add("Fantasia");
-            cmbGenero.Items.Add("Não especificado");
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
