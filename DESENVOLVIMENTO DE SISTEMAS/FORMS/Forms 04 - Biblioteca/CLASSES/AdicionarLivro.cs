@@ -19,6 +19,36 @@ namespace Biblioteca_
             lblGenero.Font = new Font("Arial", 9, FontStyle.Regular);
             lblTitulo.Font = new Font("Arial", 9, FontStyle.Regular);
             btnLimpar.Font = new Font("Arial", 8, FontStyle.Regular);
+
+            cmbGenero.Items.Add("Ação");
+            cmbGenero.Items.Add("Aventura");
+            cmbGenero.Items.Add("Cinema de arte");
+            cmbGenero.Items.Add("Chanchada");
+            cmbGenero.Items.Add("Comédia");
+            cmbGenero.Items.Add("Comédia de ação");
+            cmbGenero.Items.Add("Comédia de terror");
+            cmbGenero.Items.Add("Comédia dramática");
+            cmbGenero.Items.Add("Comédia romântica");
+            cmbGenero.Items.Add("Dança");
+            cmbGenero.Items.Add("Documentário");
+            cmbGenero.Items.Add("Docuficção");
+            cmbGenero.Items.Add("Drama");
+            cmbGenero.Items.Add("Espionagem");
+            cmbGenero.Items.Add("Faroeste");
+            cmbGenero.Items.Add("Fantasia");
+            cmbGenero.Items.Add("Fantasia científica");
+            cmbGenero.Items.Add("Ficção científica");
+            cmbGenero.Items.Add("Filme épico");
+            cmbGenero.Items.Add("Filmes com truques");
+            cmbGenero.Items.Add("Filmes de guerra");
+            cmbGenero.Items.Add("Filme policial");
+            cmbGenero.Items.Add("Mistério");
+            cmbGenero.Items.Add("Musical");
+            cmbGenero.Items.Add("Romance");
+            cmbGenero.Items.Add("Terror");
+            cmbGenero.Items.Add("Thriller");
+            cmbGenero.Items.Add("Não especificado");
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
