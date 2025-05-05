@@ -1,0 +1,39 @@
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.exe.config
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.exe
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.pdb
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.Form1.resources
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.Properties.Resources.resources
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.exe
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.pdb
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.CadastroLivro.resources
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.AdicionarLivro.resources
+C:\Users\Aluno\source\repos\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.EmprestarLivro.resources
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.AssemblyReference.cache
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.AdicionarLivro.resources
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.CadastroLivro.resources
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.EmprestarLivro.resources
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.Form1.resources
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.Properties.Resources.resources
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.GenerateResource.cache
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.CoreCompileInputs.cache
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.exe
+D:\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.pdb
+D:\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.exe.config
+D:\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.exe
+D:\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.pdb
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.exe.config
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.exe
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\bin\Debug\Biblioteca_.pdb
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.AssemblyReference.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.AdicionarLivro.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.CadastroLivro.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.EmprestarLivro.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.Form1.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.Properties.Resources.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.GenerateResource.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.csproj.CoreCompileInputs.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.exe
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 04 - Biblioteca\Biblioteca_\Biblioteca_\obj\Debug\Biblioteca_.pdb
