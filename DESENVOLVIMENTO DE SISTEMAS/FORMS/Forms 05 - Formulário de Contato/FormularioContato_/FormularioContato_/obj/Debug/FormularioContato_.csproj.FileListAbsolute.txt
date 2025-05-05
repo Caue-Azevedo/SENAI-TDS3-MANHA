@@ -1,0 +1,10 @@
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\bin\Debug\FormularioContato_.exe.config
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\bin\Debug\FormularioContato_.exe
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\bin\Debug\FormularioContato_.pdb
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.csproj.AssemblyReference.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.Form1.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.Properties.Resources.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.csproj.GenerateResource.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.csproj.CoreCompileInputs.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.exe
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 05 - Formulário de Contato\FormularioContato_\FormularioContato_\obj\Debug\FormularioContato_.pdb
