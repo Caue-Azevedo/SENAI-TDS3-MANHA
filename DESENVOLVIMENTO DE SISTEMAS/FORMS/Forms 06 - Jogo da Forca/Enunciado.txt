@@ -1,0 +1,17 @@
+** Sexto Projeto **
+Jogo da Forca
+
+
+Implemente o jogo da forca:
+	- Use um Painel (Panel) para desenhar a forca (usando Graphics).
+	- ListBox para mostrar as letras já tentadas.
+	- TextBox para entrada da letra ou palavra completa.
+	- Label para exibir a palavra oculta (ex: _ _ _ _ _).
+
+Botões:
+	- "Tentar Letra".
+	- "Novo Jogo" - seleciona uma palavra aleatória de uma lista pré-definida.
+
+Implemente a lógica do jogo com limite de tentativas.
+
+** **

@@ -1,0 +1,10 @@
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\bin\Debug\JogoForca_.exe.config
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\bin\Debug\JogoForca_.exe
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\bin\Debug\JogoForca_.pdb
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.csproj.AssemblyReference.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.Form1.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.Properties.Resources.resources
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.csproj.GenerateResource.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.csproj.CoreCompileInputs.cache
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.exe
+D:\SENAI\PROGRAMAÇÃO C#\SENAI-TDS3-MANHA-main\DESENVOLVIMENTO DE SISTEMAS\FORMS\Forms 6 - Jogo da Forca\JogoForca_\JogoForca_\obj\Debug\JogoForca_.pdb
