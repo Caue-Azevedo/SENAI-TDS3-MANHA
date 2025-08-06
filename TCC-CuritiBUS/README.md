@@ -28,14 +28,12 @@ Criar uma plataforma integrada que permita ao cidadão consultar informações d
 
 ## 🗂️ Estrutura do projeto
 /TCC-CuritiBUS/
+├── /src/         # código-fonte principal (.cs, .sln, .Designer.cs)
+├── /imgs/        # imagens de interface e telas do sistema
+├── banco.sql     # estrutura do banco de dados MySQL
+├── log.txt       # exemplo de log de execução
+└── README.md     # este documento
 
-── /src/ # código-fonte principal (.cs, .sln, .Designer.cs)
-── /imgs/ # imagens de interface e telas do sistema
-── banco.sql # estrutura do banco de dados MySQL
-
-├── log.txt # exemplo de log de execução
-
-└── README.md # este documento
 
 ## 🚀 Como executar o sistema
 
