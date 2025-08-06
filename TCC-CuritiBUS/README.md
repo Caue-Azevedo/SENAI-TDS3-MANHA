@@ -27,4 +27,25 @@ Criar uma plataforma integrada que permita ao cidadão consultar informações d
 - Organização: Arquitetura em camadas
 
 ## 🗂️ Estrutura do projeto
+/TCC-CuritiBUS/
+├── /src/ # código-fonte principal (.cs, .sln, .Designer.cs)
+├── /imgs/ # imagens de interface e telas do sistema
+├── banco.sql # estrutura do banco de dados MySQL
+├── log.txt # exemplo de log de execução
+└── README.md # este documento
 
+## 🚀 Como executar o sistema
+
+1. Clone o repositório ou baixe o ZIP
+2. Abra o projeto `.sln` no Visual Studio
+3. Verifique a string de conexão no arquivo `Database.cs`
+4. Configure o banco com base no `banco.sql` (opcional)
+5. Compile e execute
+
+> É necessário ter MySQL Server instalado e o Visual Studio com suporte a C# WinForms.
+
+## 👨‍💻 Autor
+
+**Cauê Carlos de Azevedo Guedes**  
+Curso Técnico em Desenvolvimento de Sistemas – SENAI  
+Curitiba – 2025
