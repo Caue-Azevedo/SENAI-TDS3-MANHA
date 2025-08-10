@@ -15,7 +15,8 @@ namespace TCC_SENAI_CAUE_GUEDES
 
         private static readonly HttpClient client = new HttpClient(); // cliente http usado para fazer as requisições //
         private const string BaseUrl = "https://transporteservico.urbs.curitiba.pr.gov.br/"; // url base da api //
-        private const string CodigoAcesso = "e494d"; // código de autenticação da api //
+        private const string CodigoAcesso = "xxxxx"; // código de autenticação da api // 
+                                // inserir código de acesso//
 
         #endregion
 
@@ -207,3 +208,4 @@ namespace TCC_SENAI_CAUE_GUEDES
         #endregion
     }
 }
+
